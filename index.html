@@ -12,15 +12,13 @@
     <div class="login-container">
         <h1>Books about Philippines Traditional</h1> 
         <h2>LOGIN</h2>
-        <form action="php.php" method="POST">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <div class="remember-me-container">
-                <input type="checkbox" id="remember" name="remember">
-                <label for="remember">Remember me</label>
-            </div>
-            <button type="submit">LOGIN</button>
-        </form>        
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <div class="remember-me-container">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </div>        
+        <button onclick="validateLogin()">LOGIN</button>
         <p>Or login with</p>
         <button class="social-btn" onclick="loginWith('Facebook')">Facebook</button>
         <button class="social-btn" onclick="loginWith('Google')">Google</button>
