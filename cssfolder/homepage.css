@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('imgfoldforcss/daylight-environment-forest-459225.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    background-color: rgba(106, 159, 66, 0.8);
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Para pantay sa gitna */
+    align-items: center; /* Para naka-align */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Wrapper for each box and title */
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Box Styling */
+.box {
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Para bumaba ang laman ng box */
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.box::before {
+    content: attr(data-name);
+    position: absolute;
+    top: 10px; /* Para nasa taas */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF; /* White para contrast sa background */
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Change images for each box */
+.plants {
+    background-image: url('imgfoldforcss/c578e542d8c546539c73efa6d4fc5b3c.jpg');
+}
+
+.animals {
+    background-image: url('imgfoldforcss/pheagle.jfif'); /* Add correct image path */
+}
+
+.tribes {
+    background-image: url('imgfoldforcss/Igorot.jfif');
+}
+
+.heroes {
+    background-image: url('imgfoldforcss/joserizal.jpg');
+}
+
+.clothes {
+    background-image: url('imgfoldforcss/barong.jpg');
+}
+
+/* Add a hover effect */
+.box:hover {
+    opacity: 0.8;
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 180, 0.9);
+}
+
+.footer {
+    background-color: rgba(47, 79, 31, 0.8);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.logout-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #3E6B3E; /* Medyo dark green para elegant */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    position: fixed; /* Naka-fix sa baba */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
