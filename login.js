@@ -3,8 +3,8 @@ function validateLogin() {
     var password = document.getElementById("password").value;
 
     // Dummy credentials
-    var correctEmail = "user@example.com";
-    var correctPassword = "password123";
+    var correctEmail = "angelica@gmail.com";
+    var correctPassword = "angelica18";
 
     if (email === correctEmail && password === correctPassword) {
         window.location.href = "homepage.html"; // Redirect to next page
